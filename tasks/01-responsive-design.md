@@ -24,6 +24,6 @@ Implement to the best of your ability the given design based on the starter boil
 
 #### A couple of things to keep in mind:
 
-- Please make your work [responsive, not adaptive](https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/).
+- Please make your work is [responsive, not adaptive](https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/).
 - You will have to implement the button that opens the cart (in the designs this button reads "Your cart is empty").
 - Some designs (like the cart on tablet) are missing. Please implement what you think is best. Hopefully this won't happen in real life, but we want to see how you handle a missing design 🙂

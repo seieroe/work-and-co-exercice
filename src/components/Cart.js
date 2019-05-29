@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+// import { Button } from 'react-bootstrap'
+// import Button from 'react-bootstrap/Button'
 
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0

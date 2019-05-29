@@ -21,9 +21,28 @@ APP-----------------------
                                             |
                                             Product
 
+My terminal was linked to the wrong GitHub account, a secondary account that I set up at some time.  I remedied this issue by changing the settings in my terminal to the email associated with the correct GitHub account.
+```
+git config --global user.email e.e.seieroe@gmail.com
+```
+I did an extra commit just to make sure everything is linked properly.
+
 Now it is time to begin the first task, Implement Responsive Design.
 
-My terminal was linked to the wrong GitHub account, a secondary account that I set up at some time.  I'm doing an extra commit to remedy this issue.
+
+I decided I want to install Bootstrap for React to help me style, so I went to
+https://react-bootstrap.github.io/ to get started.
+```
+npm install react-bootstrap bootstrap
+```
+I also created a CSS file for custom styling.
+I also downloaded sketch as per the instructions, from https://www.sketchapp.com/ onto my computer so I could open the sketch file.
+The bootstrap imports were resulting in failure to compile, so I decided to focus more on the custom CSS.
+
+I was getting more failure to compile and had to update the CSS loader, as well as install prop-types module.
+```
+npm install --save prop-types
+```
 
 
 # Work & Co Web Code Assessment
