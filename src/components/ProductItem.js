@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+import ProductImage from './ProductImage'
 import '../stylesheets/ProductItem.css'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
@@ -9,6 +10,8 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
       title={product.title}
       price={product.price}
       inventory={product.inventory} />
+    <ProductImage
+      product={product}  />
     <button
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>

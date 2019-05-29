@@ -43,7 +43,7 @@ I was getting more failure to compile and had to update the CSS loader, as well 
 ```
 npm install --save prop-types
 ```
-
+CSS is a challenge for me so I decided to look at some of  the other forked repositories to check out some good solutions.  For the product images, I decided to create a new component ProductImage, an idea I got from reviewing the code of @triciacodes. ProductImage takes the prop of { product } from ProductItem, and I also made all the proper channels to link the ProductItem component into the project.
 
 # Work & Co Web Code Assessment
 

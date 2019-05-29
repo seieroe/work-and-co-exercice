@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductsContainer from './ProductsContainer'
 import CartContainer from './CartContainer'
-// import '../index.css';
+import '../stylesheets/App.css';
 
 const App = () => (
   <div>
