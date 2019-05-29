@@ -1,3 +1,30 @@
+My Process!
+
+The setup of this assessment was the first challenge for me, I have not pushed one repository into another empty repository before.  In addition to the described
+```
+git remote add origin git@github.com:my-username/my-assessment.git
+git push -u origin master
+```
+I used
+```
+git remote rm origin
+```
+to remove the Work&Co repository as the origin and set my new empty repository as the origin.
+
+Next, I created the component hierarchy for my reference, illustrated below.  
+#COMPONENTS:
+APP-----------------------
+      |                  |
+      CartContainer      ProductsContainer-------------------
+      |                                     |               |
+      Cart                                 ProductItem      ProductList
+                                            |
+                                            Product
+
+Now it is time to begin the first task, Implement Responsive Design.
+
+
+
 # Work & Co Web Code Assessment
 
 This is a copy of the [Redux Shopping Cart Example](https://github.com/reactjs/redux/tree/master/examples/shopping-cart).
