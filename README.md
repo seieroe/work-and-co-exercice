@@ -23,6 +23,7 @@ APP-----------------------
 
 Now it is time to begin the first task, Implement Responsive Design.
 
+My terminal was linked to the wrong GitHub account, a secondary account that I set up at some time.  I'm doing an extra commit to remedy this issue.
 
 
 # Work & Co Web Code Assessment
