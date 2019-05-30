@@ -45,6 +45,9 @@ npm install --save prop-types
 ```
 CSS is a challenge for me so I decided to look at some of  the other forked repositories to check out some good solutions.  For the product images, I decided to create a new component ProductImage, an idea I got from reviewing the code of @triciacodes. ProductImage takes the prop of { product } from ProductItem, and I also made all the proper channels to link the ProductItem component into the project.
 
+
+
+
 # Work & Co Web Code Assessment
 
 This is a copy of the [Redux Shopping Cart Example](https://github.com/reactjs/redux/tree/master/examples/shopping-cart).
@@ -72,6 +75,14 @@ Please create a new, public Github repository where your assessment can be revie
 git remote add origin git@github.com:my-username/my-assessment.git
 git push -u origin master
 ```
+
+
+#SECOND TASK -- Enhance Cart Functionality
+
+- Remove an item
+This is going to be a
+- Update an item quantity
+
 
 Note: You're encouraged to show your work by including multiple commits - we'll be looking through your git history.
 

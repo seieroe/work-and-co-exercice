@@ -9,7 +9,11 @@ const CartContainer = ({ products, total, checkout }) => (
   <Cart
     products={products}
     total={total}
-    onCheckoutClicked={() => checkout(products)} />
+    onCheckoutClicked={() => {
+      console.log('This is another thing I want to happen')
+      {/*Possibly add logic for a modal*/}
+      checkout(products)
+    }} />
 )
 
 CartContainer.propTypes = {
