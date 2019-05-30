@@ -45,9 +45,9 @@ npm install --save prop-types
 ```
 CSS is a challenge for me so I decided to look at some of  the other forked repositories to check out some good solutions.  For the product images, I decided to create a new component ProductImage, an idea I got from reviewing the code of @triciacodes. ProductImage takes the prop of { product } from ProductItem, and I also made all the proper channels to link the ProductItem component into the project.
 
-
-
-For the modal, I decided to use the Reach UI modal library (built by Ryan Florence, the create of React Router) which helps me because it is 100% compliant for accessibility, and also because I have never built a modal using Redux.
+For the modal, I decided to use the Reach UI modal library (built by Ryan Florence, the create of React Router) which helps me because it is 100% compliant for accessibility, and also because I have never built a modal using Redux.  
+While commiting this change, I made a commit message error and I wanted to change the message before I pushed.
+I used ``` git commit --amend ``` to do this which I have never done before!
 
 
 
