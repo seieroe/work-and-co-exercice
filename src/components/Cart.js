@@ -7,13 +7,14 @@ import Product from './Product'
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
-    <button onClick={() => console.log("decrementCart()")}> decrement </button>
+    // <button onClick={() => console.log("decrementCart()")}> decrement </button>
     products.map(product =>
       <Product
         title={product.title}
         price={product.price}
         quantity={product.quantity}
         key={product.id}
+        cart={true}
       />
     )
   ) : (
@@ -24,7 +25,6 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div>
       <h3>Your Cart</h3>
       <div>{nodes}</div>
-      <button onClick={() => console.log("incrementCart()")}> increment </button>
       <div> current count </div>
       <p>Total: &#36;{total}</p>
       <button onClick={onCheckoutClicked}
