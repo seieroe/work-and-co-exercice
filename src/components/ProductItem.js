@@ -6,12 +6,17 @@ import '../stylesheets/ProductItem.css'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
-    <Product
-      title={product.title}
-      price={product.price}
-      inventory={product.inventory} />
-    <ProductImage
-      product={product}  />
+      <div className="product-details-wrapper">
+        <Product
+          title={product.title}
+          price={product.price}
+          inventory={product.inventory}
+          inventoryId={product.inventoryId} />
+        <div className="product-image-wrapper">
+        <ProductImage
+          product={product}  />
+        </div>
+      </div>
     <button
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>

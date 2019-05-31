@@ -6,8 +6,10 @@ const products = (state, action) => {
     case ADD_TO_CART:
       return {
         ...state,
-        inventory: state.inventory - 1
+        inventory: state.inventory - 1,
+        inventoryId: Math.random()*10000000000000000
       }
+
     default:
       return state
   }

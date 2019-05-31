@@ -13,13 +13,13 @@ to remove the Work&Co repository as the origin and set my new empty repository a
 
 Next, I created the component hierarchy for my reference, illustrated below.  
 #COMPONENTS:
-APP-----------------------
-      |                  |
-      CartContainer      ProductsContainer-------------------
-      |                                     |               |
-      Cart                                 ProductItem      ProductList
-      |                                      |
-      Product                                Product
+APP----------------
+  |               |
+  CartContainer   ProductsContainer-
+  |               |               |
+  Cart            ProductItem     ProductList
+  |               |
+  Product         Product
 
 My terminal was linked to the wrong GitHub account, a secondary account that I set up at some time.  I remedied this issue by changing the settings in my terminal to the email associated with the correct GitHub account.
 ```
@@ -45,9 +45,21 @@ npm install --save prop-types
 ```
 CSS is a challenge for me so I decided to look at some of  the other forked repositories to check out some good solutions.  For the product images, I decided to create a new component ProductImage, an idea I got from reviewing the code of @triciacodes. ProductImage takes the prop of { product } from ProductItem, and I also made all the proper channels to link the ProductItem component into the project.
 
-For the modal, I decided to use the Reach UI modal library (built by Ryan Florence, the create of React Router) which helps me because it is 100% compliant for accessibility, and also because I have never built a modal using Redux.  
+For the modal, I decided to use the Reach UI modal library (built by Ryan Florence, the creator of React Router) which helps me because it is 100% compliant for accessibility, and also because I have never built a modal using Redux.  
 While commiting this change, I made a commit message error and I wanted to change the message before I pushed.
 I used ``` git commit --amend ``` to do this which I have never done before!
+
+Once I got the modal working I needed to render the cart inside of the modal.  In the Product component, I conditionally rendered the product with increment, decrement and remove buttons if it is being rendered by cart instead of being rendered by ProductItem.
+I gave each item in the cart a unique ID by using
+```
+ productId: Math.random()*10000000000000000    
+```
+in the reducer when each item is added to the cart.  I made many other small changes to make sure the cart had all the parts showing that were meant to be showing.
+
+I then began work on the increment and decrement feature of the cart.  The quantity of items in the cart is being held in the store, a functionality that was given to me, so I only needed to link this information to the increment and decrement actions.
+I created ActionTypes of INCREMENT , DECREMENT , and REMOVE_FROM_CART in the constants/ActionTypes.js.  Then in actions/index.js I defined these functions.
+
+
 
 
 
